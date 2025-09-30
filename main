@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the Cracker Barrel Lunch Menu — homestyle meals, classic Southern favorites, and delicious comfort food served fresh every day.">
+  <title>Cracker Barrel Lunch Menu</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      color: #2e7d32;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      background: #2e7d32;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav ul {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #a5d6a7;
+    }
+
+    /* ---------- Hero Section ---------- */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* ---------- Lunch Menu Section ---------- */
+    .menu-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+    }
+
+    .menu-section p {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 1.1rem;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .menu-item {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-item h3 {
+      margin-bottom: 10px;
+    }
+
+    /* ---------- FAQ Section ---------- */
+    .faq-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.3rem;
+    }
+
+    .faq {
+      margin-bottom: 20px;
+    }
+
+    .faq h3 {
+      color: #1b5e20;
+      margin-bottom: 8px;
+    }
+
+    /* ---------- Contact Section ---------- */
+    .contact-section {
+      background: #e8f5e9;
+      border-radius: 12px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      margin-bottom: 20px;
+      font-size: 2.3rem;
+    }
+
+    .contact-section p {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Cracker Barrel Menu</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#lunch">Lunch Menu</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h2>Cracker Barrel Lunch Menu</h2>
+    <p>Discover delicious Southern-inspired lunch meals made with homestyle care and fresh ingredients. Whether you’re craving hearty comfort food or lighter classics, Cracker Barrel has something for everyone.</p>
+  </section>
+
+  <!-- Lunch Menu Section -->
+  <section class="menu-section" id="lunch">
+    <h2>Our Lunch Favorites</h2>
+    <p>The Cracker Barrel Lunch Menu offers a perfect balance of classic Southern flavors and fresh comfort dishes. Served from 11 AM, each meal is prepared with quality ingredients and warm hospitality — just like home cooking.</p>
+
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>🍗 Southern Fried Chicken</h3>
+        <p>Golden-fried and crispy on the outside, tender and juicy on the inside — served with two country sides and buttermilk biscuits.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🥪 Grilled Chicken BLT</h3>
+        <p>A fresh twist on a classic BLT with grilled chicken breast, crispy bacon, lettuce, and tomato on toasted sourdough bread.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🥘 Country Vegetable Plate</h3>
+        <p>Pick four homestyle sides from our daily selections, served with freshly baked cornbread — a perfect choice for a lighter lunch.</p>
+      </div>
+      <div class="menu-item">
+        <h3>🍖 Meatloaf Plate</h3>
+        <p>Our signature meatloaf recipe, slow-baked with a savory tomato glaze, served with mashed potatoes and seasonal vegetables.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <h3>What time does Cracker Barrel serve lunch?</h3>
+      <p>Lunch is typically served starting at 11:00 AM every day. However, many locations also serve breakfast all day.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Can I customize my lunch order?</h3>
+      <p>Yes! Most lunch items can be customized with your choice of sides, bread, and additional toppings. Ask your server for options.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Does Cracker Barrel offer vegetarian options?</h3>
+      <p>Absolutely. Our Country Vegetable Plate and several side dishes are great vegetarian-friendly choices.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Is the lunch menu available for takeout?</h3>
+      <p>Yes. You can order online or by phone for pickup, and many locations also offer delivery through partner services.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 123 Main Street, USA</p>
+    <p>📞 (123) 456-7890</p>
+    <p>📧 info@crackerbarrelmenu.com</p>
+    <p>We’re here to help! Contact us with any questions about our lunch menu, catering options, or restaurant services.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Cracker Barrel Menu. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
